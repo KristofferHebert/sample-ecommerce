@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+	<meta charset="UTF-8">
+	<title>Product Page</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<nav id="primary-nav">
+		<a href="http://about.nordstrom.com/careers/#/about-us/main" class="right">Why work with us?</a>
+		<a href="index.html" id="logo">Nordstrom</a>
+	</nav>
+	<main id="main-content">
+	</main>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/functions.js"></script>
+	<script>
+		$(function () {
+			queryProducts(getUrlParam('id'));
+		});
+	</script>
+</body>
+</html>
